@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seraphine Scents | Luxury Fragrances</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins;
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+h1,h2{
+font-family:'Playfair Display',serif;
+letter-spacing:2px;
+}
+
+header{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:gold;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+.hero{
+height:100vh;
+background-image:url("hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+color:gold;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+}
+
+.btn{
+margin-top:30px;
+padding:14px 40px;
+border:none;
+background:gold;
+color:black;
+font-weight:bold;
+cursor:pointer;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+margin-top:60px;
+}
+
+.product{
+background:#111;
+padding:20px;
+border-radius:15px;
+transition:0.4s;
+cursor:pointer;
+}
+
+.product img{
+width:100%;
+border-radius:10px;
+}
+
+.product:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px gold;
+}
+
+.price{
+color:gold;
+margin-top:10px;
+font-weight:bold;
+}
+
+.about{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:60px;
+}
+
+.about img{
+width:400px;
+border-radius:20px;
+}
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+color:#aaa;
+}
+
+footer span{
+color:gold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Seraphine Scents</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#products">Fragrances</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Seraphine Scents</h1>
+
+<p>
+Luxury Handcrafted Fragrances  
+Elevate Your Scent. Elevate Your Presence.
+</p>
+
+<button class="btn" onclick="scrollToProducts()">Explore Collection</button>
+
+</section>
+
+
+<section id="products" class="section">
+
+<h2>Our Signature Collection</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="perfume1.jpg">
+<h3>Mon Paris</h3>
+<p>Elegant romantic scent</p>
+<div class="price">$15</div>
+</div>
+
+<div class="product">
+<img src="perfume1.jpg">
+<h3>Black Opium</h3>
+<p>Bold and mysterious</p>
+<div class="price">$18</div>
+</div>
+
+<div class="product">
+<img src="perfume1.jpg">
+<h3>Eros</h3>
+<p>Powerful masculine aroma</p>
+<div class="price">$17</div>
+</div>
+
+<div class="product">
+<img src="perfume1.jpg">
+<h3>Mallow</h3>
+<p>Sweet floral luxury</p>
+<div class="price">$14</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about" class="section">
+
+<div class="about">
+
+<img src="logo.png">
+
+<div>
+
+<h2>About Seraphine Scents</h2>
+
+<p style="margin-top:20px;line-height:1.7">
+
+Seraphine Scents creates luxury handcrafted fragrances inspired by the world's most iconic perfumes.  
+Our mission is simple: bring **premium scents at affordable prices** so everyone can experience luxury every day.
+
+Each fragrance is carefully blended to deliver elegance, confidence, and unforgettable presence.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="section">
+
+<h2>Contact Us</h2>
+
+<p style="margin-top:20px">
+Instagram • WhatsApp • Email
+</p>
+
+<button class="btn">Order Now</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 <span>Seraphine Scents</span> — Luxury Handcrafted Fragrances</p>
+
+</footer>
+
+
+<script>
+
+function scrollToProducts(){
+document.getElementById("products").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+</script>
+
+</body>
+</html>
